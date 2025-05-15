@@ -1,0 +1,14 @@
+- !+tab = auto write for core elements
+
+- ctrl + k + s = keyboard shortcuts
+
+- ctrl + ظ = comment the line, or opposite
+  alt + shift + a = comment
+
+- alt + arrow top or bottom = trans the row up and down
+
+- ctrl + arrow left or right = move word by word instead of letter by letter
+
+- In url, src: have folder (f), css file (c) in it, in this file (../f2/index.css) mean that: exit the f, then go to f2 beside f, then include index.css file 
+
+- In css best practice of pictuers is get them in wanted dimensions, the wrong is getting it bigger and edit it in css 

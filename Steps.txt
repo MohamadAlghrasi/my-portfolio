@@ -1,0 +1,92 @@
+First: prepare some requirements:
+        1- how front-end designer begin a design? 
+                https://youtu.be/S6JSIpZCPWU?si=UQz86FZ1dcAU2ecc
+
+        2- Create project folder, then create in it css and images folders and index file.
+
+        3- Create css file
+
+        3- In html file header:
+                -- edit the title
+                -- link css file
+                -- download and link normalize.css file: it used to render all elements normally and solve some bugs, there are frameworks use it.
+                        https://necolas.github.io/normalize.css/
+                -- link google fonts from https://fonts.google.com/
+                        then apply the font in body tag in css file
+        
+        4- Prepare virtual sections in css file :
+                -- variable sections
+                -- component section
+                -- global rules section
+                -- header section
+                -- landing section
+                -- features section
+                -- services section
+                -- portfolio section
+
+
+
+        4- Edit box-sizing property in root tag in css file to (border-box)
+
+        5- Link font awesome to use icons from it:
+                -- go https://fontawesome.com/ --> download for web --> copy webfont folder and paste in project folder
+                -- from font awesome folder --> css --> copy all.min.css --> paste in css project folder - there is all.css that's same but the first is minified and second for preview-
+                -- in header of html link all.min.css 
+                Then can use any icon from fontawesome --> icons, and copy html code put it in project
+
+Second: design
+        
+In Css:
+        * Container class in global rules :
+                Why? we have parent (any parent in design like header, footer....), it will be for background with full width
+                Then we have container in it, because in our design and a lot of others the content have to be in center of page not have full width - in other words, the content should have some space in both sides(left&right) and isnt start directly from page beginning-
+                we will put containers in different places in design, Any element has container class will have same spaces in both sides(same general shape) 
+                -- make global css rules for (.container) include margin & padding
+                --  and media queries for make container responsive(from bootstrap)
+        
+        * Components:
+                * Special-heading component: notice there are repeated heading in many places, so will make global component for it with medea query.
+                * Special-p component: notice there are repeated paragraphs in many places, so will make global component for it.
+
+        * Global variables:
+                main-color and any needed variables in the process of writing the code in gradually
+
+
+In Html:
+        1- Header :
+                --has container, include:
+                        .logo div
+                        .links div include:
+                                icon(from fontqwesome or custum made)
+                                ul(number of li's)
+        
+        2- Landing Section
+                add global variable has main color that is used in page*
+                -- has h3 and paragraph
+
+        3- Features Section
+                -- has container
+                        --- has 3 .feat div
+                                ---- each has i, h3, .special-p(p)*
+
+        4- Services Section:
+                -- has .container(div)   
+                        --- has special-heading(h2)* with paragraph
+                        --- has .service-content (div)
+                                ---- has 3 col div
+                                        ----- each has two .srv div else last one has image 
+                                                ------ each .srv has i, text div(has h3, special-p*)
+        5- Portfolio section:
+                -- -- has .container(div)   
+                        --- has .special-heading(h2)* with paragraph
+                        --- has .portfolio-content (div)
+
+        6- About Section
+
+        7- Footer
+
+Third: Some Enhancements:
+        - Scroll 
+                -- by add scroll-behavior:smooth; -go to https://caniuse.com to check this property
+        - Repeated component -> make class for it (framework)
+        - Repeated property -> make variable for it, and add fallback to this variable                
